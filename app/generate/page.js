@@ -73,7 +73,7 @@ const Generate = () => {
     <div className='bg-[#E9C0E9] min-h-screen grid grid-cols-2'>
      
       <div className="col1 flex justify-center items-center flex-col text-gray-900 w-full ml-20">
-        <div className='flex flex-col gap-5 mt-20'>
+        <div className='flex flex-col gap-5 mt-24'>
           <h1 className='font-bold text-4xl'>Create your Bittree</h1>
           <div className="item">
 
@@ -100,7 +100,7 @@ const Generate = () => {
             <div className='mx-4 flex flex-col'>
               <input value={pic || ""} onChange={e=>{setpic(e.target.value)}} className='px-4 py-2 mx-2 my-2 focus:outline-pink-500 rounded-full' type="text" placeholder='Enter link to your Picture' />
               <input value={desc || ""} onChange={e=>{setdesc(e.target.value)}} className='px-4 py-2 mx-2  focus:outline-pink-500 rounded-full' type="text" placeholder='Enter description' />
-              <button disabled={pic == "" || handle=="" || links[0].linktext == ""} onClick={()=>{submitLinks()}} className='disabled:bg-slate-500 p-5 py-2 mx-2 w-fit my-4 bg-slate-900 text-white font-bold rounded-3xl'>Create your BitTree</button>
+              <button disabled={pic == "" || handle=="" || links[0].linktext == ""} onClick={()=>{submitLinks()}} className='disabled:bg-slate-500 p-5 py-2 mx-2 w-fit my-2 bg-slate-900 text-white font-bold rounded-3xl'>Create your BitTree</button>
             </div>
           </div>
         </div>
