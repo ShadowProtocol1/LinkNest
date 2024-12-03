@@ -84,6 +84,4 @@ We welcome contributions from the community. To contribute, please follow these 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
----
 
-Feel free to copy this content and commit it to your repository.
