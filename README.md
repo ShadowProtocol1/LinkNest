@@ -1,13 +1,3 @@
-I currently don't have the capability to commit changes directly to your repository. You can copy the updated README content and commit it yourself. Here's how you can do it:
-
-1. Open the `README.md` file in your repository.
-2. Replace the existing content with the updated README content.
-3. Commit the changes with a message.
-
-Here is the updated README content for your convenience:
-
----
-
 # LinkNest
 
 LinkNest is a Next.js project designed to streamline the creation and management of a link in bio. This application enables users to curate and share their content from various platforms through a single, convenient link.
