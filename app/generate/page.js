@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useSearchParams } from 'next/navigation';
+import { redirect, useSearchParams } from 'next/navigation';
 
 const Generate = () => {
 
@@ -60,10 +60,13 @@ const Generate = () => {
      setLinks([])
      setpic("")
      sethandle("")
+     redirect(`https://friendly-happiness-pjp57qwj67gj2rr5-3000.app.github.dev/${handle}`)
     }
     else{
       toast.error(result.message)
     }
+
+
  
        
   }
