@@ -1,6 +1,6 @@
 
 "use client"
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { redirect, useSearchParams } from 'next/navigation';
@@ -73,6 +73,7 @@ const Generate = () => {
 
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div className='bg-[#E9C0E9] min-h-screen grid grid-cols-2'>
      
       <div className="col1 flex justify-center items-center flex-col text-gray-900 w-full ml-20">
@@ -113,6 +114,7 @@ const Generate = () => {
         <ToastContainer />
       </div>
     </div>
+    </Suspense>
   )
 }
 
