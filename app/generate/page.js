@@ -52,7 +52,7 @@ const GenerateContent = () => {
       redirect: "follow"
     };
 
-   const r = await fetch("https://link-nest-phi.vercel.app/", requestOptions)
+   const r = await fetch("https://link-nest-phi.vercel.app", requestOptions)
    const result = await r.json()
    if(result.success){ 
      toast.success(result.message)
