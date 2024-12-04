@@ -52,14 +52,14 @@ const GenerateContent = () => {
       redirect: "follow"
     };
 
-   const r = await fetch("https://friendly-happiness-pjp57qwj67gj2rr5-3000.app.github.dev/api/add", requestOptions)
+   const r = await fetch("https://link-nest-phi.vercel.app/", requestOptions)
    const result = await r.json()
    if(result.success){ 
      toast.success(result.message)
      setLinks([])
      setpic("")
      sethandle("")
-     redirect(`https://friendly-happiness-pjp57qwj67gj2rr5-3000.app.github.dev/${handle}`)
+     redirect(`https://link-nest-phi.vercel.app/${handle}`)
     }
     else{
       toast.error(result.message)
